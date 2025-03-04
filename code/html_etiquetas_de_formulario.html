@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/Sin título.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/formato.css">
+    <script src="/js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ander Resano">
+    <meta name="theme-color" content="#fabada">
+    <meta name="description" content="Web de practicas en HTML">
+    <title>Etiquetas de formulario</title>
+</head>
+<header>
+    <h1>Etiquetas de formulario</h1>
+    <a href="/code/index.html" class="enlace" accesskey="c">inicio</a>
+</header>
+<main>
+    <div>
+        <p>Los formularios son elementos esenciales para la interaccion del usuario con la web</p>
+    </div>
+    <section>
+        <h3>Form</h3>
+        <p>Es la etiqueta que define el inicio y el final de un formulario en una web y es fundamental para que el navegador interprete el contenido y gestione su envio. Estos son sus atributos:</p>
+        <ul>
+            <li>Action: Ubicacion del script o pagina que procesa los datos</li>
+            <li>Method: Define como se envian los datos del formulario, los mas comunes son Get y Post</li>
+            <li>Enctype: Forma de codificar los datos del formulario. EL valor mas comun es : "application/x-www-form-urlencoded"</li>
+            <li>Target: Dice donde se mostrara la respuesta del formulario. Puede ser "_self" si quieres que sea en la misma pagina o "_blank" si quieres que lo haga en otra ventana</li>
+            <li>Name: Le da un nombre al formulario para poder acceder a el mediante Javascript</li>
+        </ul>
+        <form action="registro_cosplay.com" method="post">
+            <input type="text" name="nombre" placeholder="Nombre completo">
+            <input type="email" name="correo" placeholder="Correo electrónico">
+            <select name="personaje">
+                <option value="">Elige tu personaje</option>
+                <option value="batman">Batman</option>
+                <option value="spiderman">Spiderman</option>
+                <option value="wonder_woman">Wonder Woman</option>
+            </select>
+            <input type="submit" value="Registrarse">
+        </form>
+    </section>
+    <section>
+        <h3>input</h3>
+        <p>Con input creamos los diferentes tipos de campos de entrada en un formulario como campos de texto, casillas de verificacion, botones.... Puedes usar los siguientes atributos:</p>
+        <ul>
+            <li>type: Define el tipo de campo que es. Los mas comunes son: Text, password, checkbox, radio, submit, reset, file, etc</li>
+            <li>name: Nombra al campo para poder acceder a sus valores desde Javascript</li>
+            <li>value: Define el valor inicial del campo</li>
+            <li>placeholder: Muestra un texto informativo en el campo hasta que el usuario mete un valor</li>
+            <li>required: Indica si es obligatorio o no rellenar ese campo</li>
+            <li>disabled: Desactiva el valor para que el usuario no pueda modificarlo</li>
+        </ul>
+        
+    </section>
+</main>
+</html>

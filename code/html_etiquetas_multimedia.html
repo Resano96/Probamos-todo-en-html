@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/Sin título.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/formato.css">
+    <script src="/js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ander Resano">
+    <meta name="theme-color" content="#fabada">
+    <meta name="description" content="Web de practicas en HTML">
+    <title>Etiquetas multimedia</title>
+</head>
+<header>
+    <h1>Etiquetas multimedia</h1>
+    <a href="/code/index.html" class="enlace" accesskey="c">inicio</a>
+</header>
+<main>
+    <div>
+        <p>Las etiquetas multimedia son herramientas esenciales para integrar imagenes, videos, audios y otros contenidos interactivos en una web</p>
+    </div>
+    <section>
+        <h3>img</h3>
+        <p>Se utiliza para colocar una imagen, puede tener los siguientes atributos: </p>
+        <ul>
+            <li>Src: Donde esta la imagen?</li>
+            <li>Alt: Que digo si no puedo cargar la foto o usan un lector de pantalla?</li>
+            <li>Title: Si pasan el puntero por encima de la imagen... que pongo?</li>
+            <li>Loading: Como cargo la imagen? eager para cargarla inmediatamente, lazy cargarla cuando es visible o auto para que el navegador decida</li>
+        </ul>
+    </section>
+    <section>
+        <h3>picture</h3>
+        <p>Lo mismo que img pero mas moderno, tiene otros atributos: </p>
+        <ul>
+            <li>Srcset: Lista de imagenes para que el navegador use la que cree que es mas adecuada para el dispositivo</li>
+            <li>Media: Condicion media, como colocamos la foto normalmente? consulto un css?</li>
+            <li>Sizes: Que tamaño relativo uso para la imagen? </li>
+            <li>Type: Que tipo de archivo es la imagen? </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Video</h3>
+        <p>Se usa para reproducir videos en la web, permite diferentes formatos como MP4 o WEBM. Los atributos son los siguientes:</p>
+        <ul>
+            <li>Controls: Muestra los controles de reproduccion (Play, Pause, Stop....)</li>
+            <li>Type: Que tipo de archivo es?</li>
+            <li>Poster: Que caratula le ponemos al video mientras esta cargando?</li>
+            <li>Loop: Lo repetimos en bucle?</li>
+            <li>Autoplay: Comienza automaticamente?</li>
+            <li>Muted: Comenzamos el video sin sonido?(Este es solo para buenas personas)</li>
+        </ul>
+    </section>
+    <section>
+        <h3>audio</h3>
+        <p>Se usa para reproducir audio en la aplicacion web, admite los formatos MP3, Ogg y WAV. Los atributos son:</p>
+        <ul>
+            <li>SRC: Ubicacion del archivo de audio?</li>
+            <li>Controls: Le ponemos controles de reproduccion?</li>
+            <li>Type: Que tipo de archivo de audio es?</li>
+            <li>Loop: Lo repetimos en bucle?</li>
+            <li>autoplay: Reproduccion automatica? (No se suele poner)</li>
+            <li>muted: Silenciamos el audio?</li>
+        </ul>
+    </section>
+    <section>
+        <h3>track</h3>
+        <p>Se usa para añadir subtitulos a videos o audios. Sus atributos son:</p>
+        <ul>
+            <li>Kind: Que es? un subtitulo... una descripcion....</li>
+            <li>Srclang: En que idioma esta la pista?</li>
+            <li>Src: Ubicacion del archivo?</li>
+            <li>Label: Etiqueta para la pista</li>
+            <li>Default: Cual es la pista predeterminada?</li>
+            <li>Delay: Cuanto retraso le ponemos para sincronizar con la pista?</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Iframe</h3>
+        <p>Se utiliza para añadir contenido externo a nuestra web como un video de Youtube o un widget interactivo</p>
+        <p>Para añadir contenido de YT hay que darle a compartir y al lado de las redes sociales nos da la opcion de incrustar codigo</p>
+        <p>Tambien lo podemos hacer con Spotify, google Maps o incluso algun PDF en algun lector online</p>
+    </section>
+</main>
+</html>
