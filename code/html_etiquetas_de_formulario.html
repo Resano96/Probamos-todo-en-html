@@ -42,7 +42,7 @@
         </form>
     </section>
     <section>
-        <h3>input</h3>
+        <h3>Input</h3>
         <p>Con input creamos los diferentes tipos de campos de entrada en un formulario como campos de texto, casillas de verificacion, botones.... Puedes usar los siguientes atributos:</p>
         <ul>
             <li>type: Define el tipo de campo que es. Los mas comunes son: Text, password, checkbox, radio, submit, reset, file, etc</li>
@@ -52,7 +52,273 @@
             <li>required: Indica si es obligatorio o no rellenar ese campo</li>
             <li>disabled: Desactiva el valor para que el usuario no pueda modificarlo</li>
         </ul>
-        
+        <article>
+            <h4>Tipos de input</h4>
+            <ul>
+                <li>input de tipo texto </li>
+                    &lt;input type="text" placeholder="Texto"&gt;
+
+                    <input type="text" placeholder="Texto">
+                <li>input de tipo contraseña</li>
+                    &lt;input type="password" placeholder="Contraseña"&gt;
+                    <input type="password" placeholder="Contraseña">
+                <li>input de tipo numero</li>
+                    &lt;input type="number" placeholder="Número"&gt;
+                    <input type="number" placeholder="Número">
+                <li>input de tipo fecha</li>
+                    &lt;input type="date"&gt;
+                    <input type="date">
+                <li>input de tipo checkbox</li>
+                    &lt;input type="checkbox" id="checkbox"&gt;
+                    &lt;label for="checkbox">checkbox</label>&gt;
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">checkbox</label>
+                <li>input de tipo radio</li>
+                    &lt;input type="radio" id="radio1" name="gender" value="male"&gt;
+                    <br>
+                    &lt;label for="radio1">Masculino&gt;
+                    <br>
+                    &lt;input type="radio" id="radio2" name="gender" value="female"&gt;
+                    <br>
+                    &lt;label for="radio2">Femenino&gt;
+                    <br>
+                    &lt;input type="radio" id="radio3" name="gender" value="other"&gt;
+                    <br>
+                    &lt;label for="radio3">Otro&gt;
+                    <br>
+                    <input type="radio" id="radio1" name="gender" value="male">;
+                    <label for="radio1">Masculino</label>
+                    <input type="radio" id="radio2" name="gender" value="female">
+                    <label for="radio2">Femenino</label>
+                    <input type="radio" id="radio3" name="gender" value="other">
+                    <label for="radio3">Otro</label>
+                <li>input de tipo boton</li>
+                    &lt;input type="button" value="Boton"&gt;
+                    <input type="button" value="Boton">
+                <li>input de tipo submit</li>
+                    &lt;input type="submit" value="Enviar"&gt;
+                    <input type="submit" value="Enviar">
+                <li>input de tipo archivo</li>
+                    &lt;input type="file"&gt;
+                    <input type="file">
+                <li>input de tipo color</li>
+                    &lt;input type="color"&gt;
+                    <input type="color">
+                <li>input de tipo email</li>
+                    &lt;input type="email" placeholder="Correo electrónico"&gt;
+                    <input type="email" placeholder="Correo electrónico">
+                <li>input de tipo URL</li>
+                    &lt;input type="url" placeholder="URL"&gt;
+                    <input type="url" placeholder="URL">
+                <li>input de tipo telefono</li>
+                    &lt;input type="tel" placeholder="Teléfono"&gt;
+                    <input type="tel" placeholder="Teléfono">
+                <li>input de tipo de busqueda</li>
+                    &lt;input type="search" placeholder="Buscar"&gt;
+                    <input type="search" placeholder="Buscar">
+            </ul>
+        </article>
     </section>
+    <section>
+        <h3>Textarea</h3>
+        <p>Se utiliza para crear un campo de entrada extenso. Puede tener los siguientes atributos:</p>
+        <ul>
+            <li>value: Valor inicial del campo</li>
+            <li>placeholder: Muestra un texto hasta que el usuario introduce un valor</li>
+            <li>required: Campo obligatorio</li>
+            <li>disabled: deshabilita el cuadro para que no se pueda escribir</li>
+            <li>rows: Numero de filas visibles</li>
+            <li>cols: Numero de columnas visibles</li>
+            <li>maxlenght: Longitud maxima del texto</li>
+        </ul>
+        <textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..."></textarea>
+    </section>
+    <section>
+        <h3>Input con texto</h3>
+        <p>atributos adicionales</p>
+        <ul>
+            <li>placeholder: Muestra un texto hasta que el usuario introduce un valor</li>
+            <li>required: Campo obligatorio</li>
+            <li>disabled: deshabilita el cuadro </li>
+            <li>readonly: permite ver el texto pero no modificarlo</li>
+            <li>maxlength: define la longitud maxima</li>
+            <li>minlength: define la longitud minima</li>
+            <li>pattern: define un patron que se debe cumplir</li>
+        </ul>
+        <input type="text" name="ciudad"
+        placeholder="Ciudad" maxlength="50"
+        required />
+    </section>
+    <section>
+        <h3>input con numeros</h3>
+        <p>atributos adicionales</p>
+        <ul>
+            <li>type: number</li>
+            <li>min: valor minimo</li>
+            <li>max: valor maximo</li>
+            <li>step: de cuanto en cuanto?</li>
+        </ul>
+        <form action="calculo_daño.com" method="post">
+            <input type="number" name="nivel" placeholder="Nivel del personaje" min="1" max="20">
+            <input type="number" name="daño_base" placeholder="Daño base del ataque">
+            <select name="tipo_daño">
+                <option value="">Elige el tipo de daño</option>
+                <option value="fisico">Físico</option>
+                <option value="magico">Mágico</option>
+            </select>
+            <input type="submit" value="Calcular daño">
+        </form>
+    </section>
+    <section>
+        <h3>imput con fechas</h3>
+        <p>atributos adicionales</p>
+        <ul>
+            <li>type: date</li>
+            <li>min: fecha minima</li>
+            <li>max: fecha maxima</li>
+        </ul>
+        <form action="registro_usuario.com" method="post">
+            <input type="text" name="nombre" placeholder="Nombre completo">
+            <input type="email" name="correo" placeholder="Correo electrónico">
+            <input type="date" name="fecha_nacimiento">
+            <input type="submit" value="Registrarse">
+        </form>
+    </section>
+    <section>
+        <h3>imput con casillas</h3>
+        <p>atributos adicionales</p>
+        <ul>
+            <li>type:"checkbox" para casilla "radio" para botones de radio</li>
+            <li>value: valor que da la casilla al seleccionarse</li>
+            <li>checked: Seleccionado de primeras?</li>
+        </ul>
+        <form action="personaje_favorito.php" method="post">
+            <p>¿Cuáles son tus habilidades favoritas?</p>
+            <input type="radio" name="habilidades[]" value="sigilo"> Sigilo
+            <input type="checkbox" name="habilidades[]" value="hackeo"> Hackeo
+            <input type="checkbox" name="habilidades[]" value="combate"> Combate
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <section>
+        <h3>imput de color</h3>
+        <p>atributos adicionales</p>
+        <ul>
+            <li>type: color</li>
+            <li>value: color inicial</li>
+        </ul>
+        <form action="personalizar_armadura.com" method="post">
+            <p>Elige el color de tu armadura:</p>
+            <input type="color" name="color_armadura" value="#FF0000">
+            <input type="submit" value="Aplicar">
+        </form>
+    </section>
+    <section>
+        <h3>select</h3>
+        <p>select vale para crear una lista de desplegables. los atributos son:</p>
+        <ul>
+            <li>name: nombre del campo para poder acceder desde javascript o en el script que procesa el formulario</li>
+            <li>value: valor predeterminado</li>
+            <li>required: campo obligatorio</li>
+            <li>disabled: campo deshabilitado</li>
+            <li>size: numero de opciones visible</li>
+            <li>multiple: permite la seleccion multiple</li>
+        </ul>
+        <form action="personaje_favorito.com" method="post">
+            <p>¿Cuál es tu personaje favorito?</p>
+            <select name="personaje">
+                <option value="">Elige tu personaje</option>
+                <option value="luke_skywalker">Luke Skywalker</option>
+                <option value="han_solo">Han Solo</option>
+                <option value="princesa_leia">Princesa Leia</option>
+                <option value="darth_vader">Darth Vader</option>
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <section>
+        <h3>datalist</h3>
+        <p>lista de opciones autocompletables </p>
+        <form action="buscar_videojuego.php" method="post">
+            <input list="videojuegos" name="nombre_videojuego" placeholder="Nombre del videojuego">
+            <datalist id="videojuegos">
+                <option value="The Legend of Zelda: Breath of the Wild">
+                <option value="Super Mario Odyssey">
+                <option value="Red Dead Redemption 2">
+                <option value="Horizon Zero Dawn">
+            </datalist>
+            <input type="submit" value="Buscar">
+        </form>
+    </section>
+    <section>
+        <h3>imput con archivos</h3>
+        <p>atributos adicionales</p>
+        <li>
+            <ul>type: file</ul>
+            <ul>name: nombre del campo, se usa para poder acceder a archivos mediante javascript o un script</ul>
+            <ul>accept: Tipos admitidos</ul>
+            <ul>multiple: permite subir varios archivos</ul>
+            <ul>capture: permite hacer una foto o un video</ul>
+        </li>
+        <form action="subir_foto_cosplay.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="foto_cosplay" accept="image/*">
+            <input type="submit" value="Subir foto">
+        </form>
+    </section>
+    <section>
+        <h3>Organizacion de campos de un formulario</h3>
+        <p>Las etiquetas fieldset y legend se usan para agrupar campos relacionados en un formulario</p>
+        <p>Las etiquetas label se utilizan para asociar un texto descriptivo a un campo de entrada. Mediante el atributo for podemos enlazarlo al id de un input para que semanticamente esten juntos e incluso que al pulsar en el label nos envie dentro del mismo</p>
+        <form action="registro_usuario.php" method="post">
+            <fieldset>
+                <legend>Información personal</legend>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" />
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" />
+            </fieldset>
+            <fieldset>
+                <legend>Contraseña</legend>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena">
+                <label for="confirmar_contrasena">Confirmar contraseña:</label>
+                <input type="password" id="confirmar_contrasena">
+            </fieldset>
+            <input type="submit" value="Registrarse">
+        </form>
+    </section>
+    <section>
+        <h3>Controles de progreso</h3>
+        <p>La etiqueta progress se utiliza para mostrar una barra de progreso al usuario</p>
+        <p>La etiqueta meter se utiliza para mostrar una medidor con valores minimo, maximo y optimo</p>
+        <form action="subir_archivo.php"
+            method="post"
+            enctype="multipart/form-data">
+        <input type="file" name="archivo">
+            <progress value="0" max="100"></progress>
+        <input type="submit" value="Subir archivo">
+        </form>
+
+        <meter min="0" max="100" value="75">Nivel de energía</meter>
+    </section>
+    <section>
+        <h3>botones de envio</h3>
+        <p>el type "submit" se utiliza para enviar el formulario al servidor</p>
+        <form action="contacto.php" method="post">
+            <input type="text" name="nombre" placeholder="Nombre completo">
+            <input type="email" name="correo" placeholder="Correo electrónico">
+            <input type="submit" value="Enviar mensaje">
+        </form>
+    </section>
+    <div>
+        <p>Las etiquetas de formularios en HTML son herramientas fundamentales para crear interfaces interactivas y dinamicas en la web</p>
+        <p>Recomendaciones</p>
+        <ul>
+            <li>Organizar los campos de forma clara y logica</li>
+            <li>Utiliza etiquetas descriptivas para que los usuarios sepan que informacion se les solicita</li>
+            <li>Valida los datos del formulario para asegurarte de que son correctos y completos</li>
+            <li>Ofrece una experiencia de usuario agradable y accesible. No compliques de mas los formularios y dividelos en grupos si fuese posible</li>
+        </ul>
+    </div>
 </main>
 </html>
