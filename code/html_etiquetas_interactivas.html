@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/Sin título.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/formato.css">
+    <script src="/js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ander Resano">
+    <meta name="theme-color" content="#fabada">
+    <meta name="description" content="Web de practicas en HTML">
+    <title>Etiquetas interactivas</title>
+</head>
+<header>
+    <h1>Etiquetas interactivas</h1>
+    <a href="/code/index.html" class="enlace" accesskey="c">inicio</a>
+</header>
+<main>
+    <div>
+        <p>Las etiquetas interactivas en HTML5 permiten crear interfaces web mas dinamicas y otorgan al usuario el poder de utilizar etiquetas para modificar el contenido de la misma. Las mas utilizadas son:</p>
+    </div>
+    <section>
+        <h3>details</h3>
+        <p>sirve para crear un desplegable permitiendo ocultar y mostrar informacion.</p>
+        <p>Su atributo open indica si esta abierto o cerrado por defecto.</p>
+        <p>con la etiqueta summary resumimos el contenido del desplegable</p>
+        <details>
+            <summary>¿Quiénes son los Vengadores?</summary>
+            <ul>
+                <li>Iron Man (Tony Stark)</li>
+                <li>Capitán América (Steve Rogers)</li>
+                <li>Thor</li>
+                <li>Hulk (Bruce Banner)</li>
+                <li>Viuda Negra (Natasha Romanoff)</li>
+                <li>Ojo de Halcón (Clint Barton)</li>
+            </ul>
+        </details>
+    </section>
+    <section>
+        <h3>dialog</h3>
+        <p>crea una "ventana emergente" pero mas flexible y accesible</p>
+        <p>el atributo open dice si esta abierto o no por defecto</p>
+        <p>para darle funcionalidad debemos usar JavaScript</p>
+        <dialog open>
+            <h2>¿Cuál es tu película de Star Wars favorita?</h2>
+            <form action="encuesta-starwars.php" method="post">
+                <input type="radio" name="pelicula" value="episodio-iv"> Episodio IV: Una nueva esperanza
+                <input type="radio" name="pelicula" value="episodio-v"> Episodio V: El imperio contraataca
+                <input type="radio" name="pelicula" value="episodio-vi"> Episodio VI: El retorno del Jedi
+                <input type="submit" value="Votar">
+            </form>
+        </dialog>
+    </section>
+    <section>
+        
+    </section>
+</main>
+</html>
