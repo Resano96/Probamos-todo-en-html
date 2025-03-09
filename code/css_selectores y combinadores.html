@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/Sin título.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/formato.css">
+    <script src="/js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ander Resano">
+    <meta name="theme-color" content="#fabada">
+    <meta name="description" content="Web de practicas en HTML">
+    <title>Selectores y combinadores</title>
+</head>
+<header>
+    <h1>Selectores y combinadores</h1>
+    <a href="/code/index.html" class="enlace" accesskey="c">inicio</a>
+</header>
+<main>
+    <div>
+        <p>Los selectores son patrones que se utilizan para seleccionar los elementos HTML a los que se aplicaran los estilos, Los combinadores son las palabras que definen la relacion entre los elementos seleccionados</p>
+    </div>
+    <article>
+        <h3>Selectores basicos</h3>
+    
+        <section>
+            <h4>Selector de tipo o etiqueta</h4>
+            <p>Esto cambia todos los elementos que coincidan en el HTML. Ej.: P, h1 , section....</p>
+        </section>
+        <section>
+            <h4>Selector de clase</h4>
+            <p>Esto cambia todos los elementos que tengan esta clase en el HTML. Comienzan con un "." y se nombran con class </p>
+        </section>
+        <section>
+            <h4>Selectores de id</h4>
+            <p>Esto cambia todos los elementos que tengan la misma id. Comienzan con un # y se nombra con id</p>
+        </section>
+    </article>
+    <article>
+        <h3>Selectores avanzados</h3>
+        <p>De esta forma se puede seleccionar elementos y aplicarles reglas de CSS en base a sus atributos</p>
+        <section>
+            <h4>Selector Universal</h4>
+            <p>Nos permite definir todos los elementos del documento. Para hacer una seleccion universal se usa *</p>
+        </section>
+        <section>
+            <h4>Selector de atributo</h4>
+            <p>Nos permite definir todos los elementos del documento que coincidan con un atributo predeterminado. Suele ir precedido del nombre de la etiqueta cuyo atributo denominaremos a traves de los caracteres [] y su valor tras =</p>
+        </section>
+    </article>
+    <article>
+        <h3>combinadores CSS</h3>
+        <p>Los combinadores sirven para relacionar diferentes selectores dependiendo de la ubicacion, el tipo y los atributos del documento</p>
+        <section>
+            <h4>combinador de hermanos adyacentes</h4>
+            <p>Nos permite seleccionar un elemento que sigue directamente al primero y que comparte un elemento padre comun. Con esto seleccionaremos el segundo elemento utilizando el primero como referencia. La sintaxis es con el caracter +</p>
+        </section>
+        <section>
+            <h4>combinador general de hermanos</h4>
+            <p>Nos permite seleccionar todos los elementos que siguen al primero y que comparten el mismo padre. Es parecido al anterior pero nos permite recuperar todos los elementos sin necesidad de estar juntos. La sinstaxis es con el caracter ~</p>
+        </section>
+        <section>
+            <h4>combinador de hijo</h4>
+            <p>Nos permite seleccionar los elementos que son hijos directos del primer elemento. Su sintaxis es con el simbolo > </p>
+        </section>
+        <section>
+            <h4>Combinador de descendientes</h4>
+            <p>Nos permite seleccionar los elementos que son descendientes de un elemento padre comun, sin necesidad de ser descendiente directo. Para su sintaxis se usa el espacio</p>
+        </section>
+
+    </article>
+</main>
+</html>
